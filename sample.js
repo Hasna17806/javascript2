@@ -8,3 +8,9 @@ document.write("<h1>Good Morning</h1")
 
 var a = 10, b =20;
 document.write(a + b)
+function greetings () {
+
+    document.write("Good Morning")
+}
+    
+
