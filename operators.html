@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operator</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgba(169, 169, 169, 0.301);
+        }
+        h1{
+            text-align: center;
+            background-color:darkslategray;
+            color: aliceblue;
+            
+        }
+h2{
+    color: rgb(116, 141, 141);
+    text-decoration: underline;
+}
+    </style>
+    <h1>Operators</h1>
+    <h2>Assignment Example</h2>
+    <p id="demo"></p>
+    <p id="demotext"></p>
+    <p id="demosub"></p>
+    <script>
+        let x = 5;
+        let y = 2;
+        let z = x + y;
+        document.getElementById("demo").innerHTML
+        = "The sum of x + y is: " + z;
+        //addition assignment
+        let text = "Hello"; text += "World";
+        document.getElementById("demotext").innerHTML
+        = text;
+        //subtraction assignment
+        let m = 17;
+        m -= 8;
+        document.getElementById("demosub").innerHTML
+        = "Value of m is: " + m;
+    </script>
+    <h2>Arithmetic Example</h2>
+    <p id="demo1"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <script>
+        //addition
+        let x1 = 50;
+        let y1 = 52;
+        let z1 = x1 + y1;
+        document.getElementById("demo1").innerHTML
+        = z1;
+         
+        //subtraction
+        let x3 = 25;
+        let y3 = 10;
+        let z3 = x3 - y3;
+        document.getElementById("demo3").innerHTML
+        = z3;
+
+        //multiplication
+        let x4 = 3;
+        let y4 = 2;
+        let z4 = x4 * x4;
+         document.getElementById("demo4").innerHTML
+        = z4;
+
+        //dividing
+        let x5 = 2;
+        let y5 = 3;
+        let z5 = x5 / y5;
+         document.getElementById("demo5").innerHTML
+        = z5;
+
+        //remainder
+        let x6 = 50;
+        let y6 = 100;
+        let z6 = x6 % y6;
+         document.getElementById("demo6").innerHTML
+        = z6;
+    </script>
+    <h2>Comprasion Example</h2>
+    <p id="demoo"></p>
+    
+    <script>                            
+         //equal to
+
+        let a = 20;
+        let b = 20;
+        document.write(a == b);
+        document.write("<br>")
+
+    //identical
+
+       let a1 = 25;
+        let b1 = "25";
+        document.write(a1 === b1)
+         document.write("<br>")
+        //this is false,because the data type isnt same.one is number and another one is string.
+        
+        //Not equal to
+
+        let a2 = 30;
+        let b2 = 40;
+        document.write(a2 != b2)
+        document.write("<br>")
+           
+         //less than & greater than
+
+        let text1 = "A";
+        let text2 = "M";
+        let result = text1 > text2;
+        document.getElementById("demoo").innerHTML
+        = "Is A less than M? "  + result;
+
+        let c = 10;
+        let d = 20;
+         document.write(c < d)
+         document.write("<br>")
+
+          let c1 = 10;
+        let d1 = 20;
+         document.write(c1 > d1);
+</script>
+
+<h2>Logical Example</h2>
+  <script>
+    //logical and
+    let f = 45;
+    let g = 40;
+    document.write(f == 45 && g == 40);
+    //True,because both statement are true.If one false both will be false.
+    document.write("<br>")
+
+     //logical or
+     let f1 = 100;
+     let g1 = 150;
+     document.write(f1 == 10 || g1 == 150);
+     //True,because one of the statement is true.
+     document.write("<br>")
+
+     //logical not
+     let f2 = 120;
+     let g2 = 50;
+     document.write(!(g2 == 50));
+     //Its actually true but the result is false,because in this method the result will be opposite.
+  </script>  
+  <h1>Coercion & Conversion</h1>  
+  <p id="coercion"></p>
+<p id="conversion"></p>  
+  <script>
+    //Coercion
+    let num = 10;
+    let str = "5";
+   let result1 = num + str;
+   document.getElementById("coercion").innerHTML = "Coercion result (10 + '5') = " + result1;
+
+
+   //Conversion 
+   let converted = num + Number(str);
+  document.getElementById("conversion").innerHTML  = "Conversion result (10 + Number('5')) = " + converted;
+  </script>                          
+</body>
+</html>
