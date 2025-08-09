@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Text to show or hide -->
+  <p id="mytext">Hello, I am visible!</p>  
+ 
+  <!-- Button to control text -->
+   <button id="toggleBtn">Hide Text</button>
+   <script>
+    const text = document.getElementById("mytext");
+    const button = document.getElementById("toggleBtn");
+
+    button.addEventListener("click",function(){
+        //Check if the text is hidden
+       if (text.style.display === "none") {
+        text.style.display = "block";  //make text appear
+        button.innerText = "Hide Text"; //change button label
+       }
+       else {
+       text.style.display = "none"; //make text disappear
+       button.innerText = "Show Text"; 
+       }
+    });
+
+   </script>
+</body>
+</html>
