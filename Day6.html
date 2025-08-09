@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Example</title>
+</head>
+<body>
+    <style>
+        *{
+            background-color:bisque;
+        }
+        h2{
+            text-align: center;
+            background-color: brown;
+            color: azure;
+        }
+        button{
+           
+            border: white;
+            background-color: brown;
+            color: #eee6e4;
+            border-radius: 20px;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            letter-spacing: 2px;
+        }
+    </style>
+    <h2 id="title">Welcome!</h2>
+    <button id="changeBtn">Change Text</button>
+
+    <script>
+        const heading = document.getElementById("title");
+        const button  = document.getElementById("changeBtn");
+
+        button.addEventListener("click" , function() {
+         heading.innerText = "Text Changed!";
+        
+    }); 
+     </script>
+   <!-- <p id="message">Hello!</p>
+    <button id="myButton">Click Me</button>
+    <script>
+        const message = document.getElementById("message");
+        const button = document.getElementById("myButton");
+        button.addEventListener("click", function() {
+           message.innerText = "You clicked the button!"; 
+          
+        });
+    </script>  -->
+</body>
+</html>
